@@ -10,7 +10,7 @@ namespace Assets.Scripts.Weapons.Behaviours
         public Vector3 EyeSigthPosition;
         public Vector3 EyeSightRotation;
 
-        public bool IsMoving { get; private set; }
+        public bool IsInAction { get; private set; }
 
 
         private Vector3 _originalRotation;
@@ -32,7 +32,7 @@ namespace Assets.Scripts.Weapons.Behaviours
 
         public void Update()
         {
-            if (!IsMoving)
+            if (!IsInAction)
                 return;
 
             if (CurrentWeaponSight == WeaponSight.Eye)
@@ -46,7 +46,7 @@ namespace Assets.Scripts.Weapons.Behaviours
 
                 if (_previousPosition == EyeSigthPosition)
                 {
-                    IsMoving = false;
+                    IsInAction = false;
                 }
 
             }
@@ -62,7 +62,7 @@ namespace Assets.Scripts.Weapons.Behaviours
 
                 if (_previousPosition == _originalPosition)
                 {
-                    IsMoving = false;
+                    IsInAction = false;
                 }
             }
 
@@ -76,7 +76,7 @@ namespace Assets.Scripts.Weapons.Behaviours
             CurrentWeaponSight = WeaponSight.Eye;
             _previousPosition = transform.localPosition;
             _previousRotation = transform.localRotation.eulerAngles;
-            IsMoving = true;
+            IsInAction = true;
         }
 
         public void RestoreSight()
@@ -84,7 +84,7 @@ namespace Assets.Scripts.Weapons.Behaviours
             CurrentWeaponSight = WeaponSight.Hip;
             _previousPosition = EyeSigthPosition;
             _previousRotation = EyeSightRotation;
-            IsMoving = true;
+            IsInAction = true;
         }
     }
 

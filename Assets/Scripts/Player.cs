@@ -53,6 +53,8 @@ namespace Assets.Scripts
         [SerializeField]
         private PlayerHealthGameEvent OnPlayerHealthChanged = null;
 
+        private float _originalSpeed;
+
 
         private void Start()
         {
@@ -66,6 +68,7 @@ namespace Assets.Scripts
 
             //Atualiza a GUI com a atual vida do player.
             OnPlayerHealthChanged?.Raise(Health);
+            _originalSpeed = Speed;
         }
 
 
@@ -109,6 +112,17 @@ namespace Assets.Scripts
         {
             _health.OnDamaged -= OnDamaged;
             _health.OnHealed -= OnHealed;
+        }
+
+
+        public void ReduceSpeedToEyeSight()
+        {
+            Speed *= 0.45f;
+        }
+
+        public void RestoreSpeed()
+        {
+            Speed = _originalSpeed;
         }
     }
 }

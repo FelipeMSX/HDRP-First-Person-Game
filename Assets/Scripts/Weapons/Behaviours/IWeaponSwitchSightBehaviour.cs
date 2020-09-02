@@ -5,7 +5,7 @@
         /// <summary>
         ///Indicates that the object is moving between the options.
         /// </summary>
-        bool IsMoving { get; }
+        bool IsInAction { get; }
 
         /// <summary>
         /// Moves the object to the eye sight that is right in the front of the camera.

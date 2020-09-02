@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Weapons.Behaviours;
+using UnityEngine;
 
 namespace Assets.Scripts.Weapons
 {
@@ -9,6 +10,8 @@ namespace Assets.Scripts.Weapons
         public bool IsInAction;
         public AnimationClip ActionAnimation;
         public WeaponTypes WeaponType;
+
+        public ISmoothWeaponTransitionBehaviour SmoothTransitionBehaviour { get; set; }
 
         public abstract void Fire();
 

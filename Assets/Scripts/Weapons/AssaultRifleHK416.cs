@@ -1,14 +1,9 @@
-﻿using Assets.Scripts.ScriptableObjects.Events;
-using Assets.Scripts.Weapons.Behaviours;
-using System;
-using UnityEngine;
+﻿using Assets.Scripts.Weapons.Behaviours;
 
 namespace Assets.Scripts.Weapons
 {
     public class AssaultRifleHK416 : WeaponShootable
     {
-
-        private BehaviourRecoil _behaviourRecoil;
 
         public bool IsShooting { get; private set; }
 
@@ -20,29 +15,18 @@ namespace Assets.Scripts.Weapons
 
         public override void Fire()
         {
+            if (BehaviourShoot == null)
+                return;
+
             if (BehaviourShoot.CanShoot())
             {
                 BehaviourShoot.Shoot();
 
-                if (_behaviourRecoil != null)
-                    _behaviourRecoil.AddRecoilForce(transform.localPosition);
+                if (RecoilBehaviour != null)
+                    RecoilBehaviour.AddRecoilForce();
             }
         }
 
-
-        public void SwitchWeaponSight()
-        {
-            if (WeaponSwitchSightBehaviour.CurrentWeaponSight == WeaponSight.Hip)
-            {
-                WeaponSwitchSightBehaviour.MoveToEyeSight();
-                OnWeaponEyeSightActived?.Raise();
-            }
-            else
-            {
-                WeaponSwitchSightBehaviour.RestoreSight();
-                OnWeaponHipSightActived?.Raise();
-            }
-        }
 
         private void Start()
         {
@@ -51,14 +35,16 @@ namespace Assets.Scripts.Weapons
             BehaviourReload = GetComponent<IBehaviourReloadable>();
             BehaviourShoot = GetComponent<IBehaviourShootable>();
             WeaponSwitchSightBehaviour = GetComponent<IWeaponSwitchSightBehaviour>();
-            _behaviourRecoil = GetComponent<BehaviourRecoil>();
+            RecoilBehaviour = GetComponent<IRecoilBehaviour>();
+            SmoothTransitionBehaviour = GetComponent<ISmoothWeaponTransitionBehaviour>();
+
 
 
         }
 
         private void Update()
         {
-            if (IsShooting && !WeaponSwitchSightBehaviour.IsMoving)
+            if (IsShooting && !WeaponSwitchSightBehaviour.IsInAction)
             {
                 Fire();
             }

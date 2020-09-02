@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace Assets.Scripts.Weapons.Behaviours
 {
-    public class BehaviourRecoil : MonoBehaviour
+    public class RecoilBehaviour : MonoBehaviour, IRecoilBehaviour
     {
-        public float RecoilForce = 5f;
-        public float Speed = 3.5f;
+        public float RecoilForce = 1f;
+        public float Speed = 1.5f;
 
         private bool _shooted = false;
         private bool _restore = false;
@@ -49,14 +49,14 @@ namespace Assets.Scripts.Weapons.Behaviours
 
         }
 
-        public void AddRecoilForce(Vector3 originalPosition)
+        public void AddRecoilForce()
         {
             _shooted = true;
 
-            _originalPosition = originalPosition;
-            _recoilPosition = new Vector3(originalPosition.x, originalPosition.y, originalPosition.z - RecoilForce);
+            _originalPosition = gameObject.transform.localPosition;
+            _recoilPosition = new Vector3(gameObject.transform.localPosition.x, gameObject.transform.localPosition.y, gameObject.transform.localPosition.z - RecoilForce);
 
-            _previousPosition = originalPosition;
+            _previousPosition = gameObject.transform.localPosition;
         }
     }
 }

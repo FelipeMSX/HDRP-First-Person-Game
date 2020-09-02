@@ -56,11 +56,6 @@ namespace Assets.Scripts.Weapons.Behaviours
             if(_weapon.ProjectileEjectionEffect != null)
                 _weapon.ProjectileEjectionEffect.Play();
 
-            if(_animation != null)
-            {
-                _animation.AddClip(_weapon.ActionAnimation, "Shoot");
-                _animation.Play("Shoot");
-            }
 
             OnWeaponFired?.Raise(_weapon);
 

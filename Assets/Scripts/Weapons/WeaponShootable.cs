@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.ScriptableObjects.Events;
 using Assets.Scripts.Weapons.Behaviours;
+using System.Net;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -9,7 +10,7 @@ namespace Assets.Scripts.Weapons
     {
         [SerializeField]
         private IBehaviourReloadable _behaviourReload;
-        public IBehaviourReloadable BehaviourReload 
+        public IBehaviourReloadable BehaviourReload
         {
             get => _behaviourReload;
             set => _behaviourReload = value;
@@ -24,6 +25,9 @@ namespace Assets.Scripts.Weapons
         }
 
         public IWeaponSwitchSightBehaviour WeaponSwitchSightBehaviour;
+
+        public IRecoilBehaviour RecoilBehaviour;
+
 
         [SerializeField]
         public VoidEvent OnWeaponEyeSightActived = null;
@@ -113,6 +117,38 @@ namespace Assets.Scripts.Weapons
             set => _currentClipSize = value;
         }
 
+
+        public void SwitchWeaponSight()
+        {
+            if (WeaponSwitchSightBehaviour == null)
+                return;
+
+            SwitchWeaponSightAuxiliar(WeaponSwitchSightBehaviour.CurrentWeaponSight == WeaponSight.Eye ? WeaponSight.Hip : WeaponSight.Eye);
+        }
+
+        public void SwitchToDesiredWeaponSight(WeaponSight weaponSight)
+        {
+            if (WeaponSwitchSightBehaviour == null)
+                return;
+
+
+
+            SwitchWeaponSightAuxiliar(weaponSight);
+        }
+
+        private void SwitchWeaponSightAuxiliar(WeaponSight weaponSight)
+        {
+            if (weaponSight == WeaponSight.Eye)
+            {
+                WeaponSwitchSightBehaviour.MoveToEyeSight();
+                OnWeaponEyeSightActived?.Raise();
+            }
+            else
+            {
+                WeaponSwitchSightBehaviour.RestoreSight();
+                OnWeaponHipSightActived?.Raise();
+            }
+        }
 
         public abstract void Reload();
     }

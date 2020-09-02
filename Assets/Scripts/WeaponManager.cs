@@ -39,7 +39,17 @@ namespace Assets.Scripts
             GameObject currentWeapon = null;
             foreach (Transform weapon in transform)
             {
-                if((WeaponTypes)i == CurrentWeapon)
+                //Before change the current weapon certifies that should remain in hig sight mode.
+                if ((WeaponTypes)i == _previousWeapon)
+                {
+                    Weapon prevousWeapon = weapon.gameObject.GetComponent<Weapon>();
+                    if (prevousWeapon is WeaponShootable weaponShootable)
+                    {
+                        weaponShootable.SwitchToDesiredWeaponSight(Weapons.Behaviours.WeaponSight.Hip);
+                    }
+                }
+
+                if ((WeaponTypes)i == CurrentWeapon)
                 {
                     currentWeapon = weapon.gameObject;
                 }
@@ -53,7 +63,11 @@ namespace Assets.Scripts
                 Weapon weapon = currentWeapon.GetComponent<Weapon>();
                 if(weapon != null)
                 {
+
                     OnWeaponSwitched.Raise(weapon);
+                    weapon.SmoothTransitionBehaviour?.SmoothTransition();
+
+
                 }
             }
 

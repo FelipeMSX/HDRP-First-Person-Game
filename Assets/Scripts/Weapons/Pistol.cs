@@ -14,22 +14,19 @@ namespace Assets.Scripts.Weapons
 
         public override void Fire()
         {
-            BehaviourShoot.Shoot();
+            if (BehaviourShoot == null)
+                return;
+
+            if (BehaviourShoot.CanShoot())
+            {
+                BehaviourShoot.Shoot();
+
+                if (RecoilBehaviour != null)
+                    RecoilBehaviour.AddRecoilForce();
+            }
         }
 
-        public void SwitchWeaponSight()
-        {
-            if (WeaponSwitchSightBehaviour.CurrentWeaponSight == WeaponSight.Hip)
-            {
-                WeaponSwitchSightBehaviour.MoveToEyeSight();
-                OnWeaponEyeSightActived?.Raise();
-            }
-            else
-            {
-                WeaponSwitchSightBehaviour.RestoreSight();
-                OnWeaponHipSightActived?.Raise();
-            }
-        }
+
 
         private void Start()
         {
@@ -38,7 +35,9 @@ namespace Assets.Scripts.Weapons
             BehaviourReload = GetComponent<IBehaviourReloadable>();
             BehaviourShoot = GetComponent<IBehaviourShootable>();
             WeaponSwitchSightBehaviour = GetComponent<IWeaponSwitchSightBehaviour>();
+            RecoilBehaviour = GetComponent<IRecoilBehaviour>();
 
+            SmoothTransitionBehaviour = GetComponent<ISmoothWeaponTransitionBehaviour>();
         }
 
         private void Update()
@@ -51,7 +50,7 @@ namespace Assets.Scripts.Weapons
             if (!this.isActiveAndEnabled)
                 return;
 
-            if (!WeaponSwitchSightBehaviour.IsMoving)
+            if (!WeaponSwitchSightBehaviour.IsInAction)
             {
                 IsShooting = true;
                 Fire();
