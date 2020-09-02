@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 131.15134, g: 162.54797, b: 215.19327, a: 1}
+  m_IndirectSpecularColor: {r: 131.16855, g: 162.52502, b: 215.10977, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1115,62 +1115,6 @@ MonoBehaviour:
   swayLimit: 0.03
   swayVelocity: 0.2
   _player: {fileID: 475147164}
---- !u!114 &300088635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300088630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: d1d7c42e768d13b49b6aa7eab3f57756, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 300088632}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
-        m_MethodName: ShootPerformed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &300088636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300088630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: d15ca04e25287394faacdf876d5a370a, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 300088632}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
-        m_MethodName: ReloadPerformed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &300088637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,62 +1144,6 @@ MonoBehaviour:
   RotationSpeed: 9
   EyeSigthPosition: {x: -0.419, y: 0.378, z: 0.06}
   EyeSightRotation: {x: 90, y: 0, z: 90}
---- !u!114 &300088639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300088630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: f50b88b9c6ab4e246b4e17c1534766bb, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 300088632}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
-        m_MethodName: WeaponEyeSightPerformed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &300088640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300088630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 01f91fc6ea4a4ac49a86f0e9ad621473, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 300088632}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
-        m_MethodName: ShootCanceled
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &300088641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1270,64 +1158,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RecoilForce: 0.05
   Speed: 1.5
---- !u!114 &300088642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300088630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: ae9adfbe00ab3754ead5d368fabf445e, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 300088634}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
-          Assembly-CSharp
-        m_MethodName: ActiveBehaviour
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &300088643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 300088630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: e1c4b8dbaea8dfc4e84624ef2be77178, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 300088634}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
-          Assembly-CSharp
-        m_MethodName: DisableBehaviour
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &300088644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2573,11 +2403,6 @@ GameObject:
   - component: {fileID: 475147164}
   - component: {fileID: 475147166}
   - component: {fileID: 475147167}
-  - component: {fileID: 475147169}
-  - component: {fileID: 475147168}
-  - component: {fileID: 475147170}
-  - component: {fileID: 475147172}
-  - component: {fileID: 475147171}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2601,6 +2426,7 @@ Transform:
   - {fileID: 512546487}
   - {fileID: 431861513}
   - {fileID: 773523143}
+  - {fileID: 1669965049}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -177.843, z: 0}
@@ -2688,146 +2514,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   _isJumpPressed: 0
---- !u!114 &475147168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475147161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: b1d4feb41b15a0f45ba3052b10af5f79, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 475147164}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: JumpCanceled
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &475147169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475147161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: c7fd4d88ece565649bb2ee88e95ecddd, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 475147164}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: JumpStarted
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &475147170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475147161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: cbff1b503853a8847a2036e4b2797294, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 475147164}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: MovePerformed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &475147171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475147161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: ae9adfbe00ab3754ead5d368fabf445e, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 475147164}
-        m_TargetAssemblyTypeName: Assets.Scripts.Player, Assembly-CSharp
-        m_MethodName: RestoreSpeed
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &475147172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475147161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: e1c4b8dbaea8dfc4e84624ef2be77178, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 475147164}
-        m_TargetAssemblyTypeName: Assets.Scripts.Player, Assembly-CSharp
-        m_MethodName: ReduceSpeedToEyeSight
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &494983250
 GameObject:
   m_ObjectHideFlags: 0
@@ -10301,6 +9987,50 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &1121186249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1121186250}
+  - component: {fileID: 1121186251}
+  m_Layer: 0
+  m_Name: FrameRate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1121186250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121186249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1322697053}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1121186251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121186249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3245842fc77d961459e7f7a10cdfc819, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _frameRate: 60
 --- !u!1001 &1156113621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11230,62 +10960,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnWeaponFired: {fileID: 11400000, guid: 38154a073222c4a4ebb5a7f1d1855795, type: 2}
---- !u!114 &1306497847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306497841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: d15ca04e25287394faacdf876d5a370a, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306497845}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ReloadPerformed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1306497848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306497841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: d1d7c42e768d13b49b6aa7eab3f57756, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306497845}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ShootPerformed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1306497849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11302,120 +10976,6 @@ MonoBehaviour:
   RotationSpeed: 9
   EyeSigthPosition: {x: -0.3775, y: 0.06, z: -0.036}
   EyeSightRotation: {x: -0.011, y: 0.009, z: 0.31}
---- !u!114 &1306497850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306497841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: e1c4b8dbaea8dfc4e84624ef2be77178, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306497843}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
-          Assembly-CSharp
-        m_MethodName: DisableBehaviour
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1306497851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306497841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: ae9adfbe00ab3754ead5d368fabf445e, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306497843}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
-          Assembly-CSharp
-        m_MethodName: ActiveBehaviour
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1306497852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306497841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 01f91fc6ea4a4ac49a86f0e9ad621473, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306497845}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Pistol, Assembly-CSharp
-        m_MethodName: ShootCanceled
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1306497853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1306497841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: f50b88b9c6ab4e246b4e17c1534766bb, type: 2}
-  unityEventRespone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1306497845}
-        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Pistol, Assembly-CSharp
-        m_MethodName: WeaponEyeSightPerformed
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1306497854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11498,9 +11058,216 @@ Transform:
   - {fileID: 177311046}
   - {fileID: 581876911}
   - {fileID: 1513995150}
+  - {fileID: 1121186250}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1333743554
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1333743555}
+  - component: {fileID: 1333743561}
+  - component: {fileID: 1333743560}
+  - component: {fileID: 1333743559}
+  - component: {fileID: 1333743558}
+  - component: {fileID: 1333743557}
+  - component: {fileID: 1333743556}
+  m_Layer: 0
+  m_Name: Listeners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1333743555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333743554}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1306497840}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1333743556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333743554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: d1d7c42e768d13b49b6aa7eab3f57756, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306497845}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: ShootPerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1333743557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333743554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f50b88b9c6ab4e246b4e17c1534766bb, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306497845}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Pistol, Assembly-CSharp
+        m_MethodName: WeaponEyeSightPerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1333743558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333743554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 01f91fc6ea4a4ac49a86f0e9ad621473, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306497845}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Pistol, Assembly-CSharp
+        m_MethodName: ShootCanceled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1333743559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333743554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: ae9adfbe00ab3754ead5d368fabf445e, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306497843}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
+          Assembly-CSharp
+        m_MethodName: ActiveBehaviour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1333743560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333743554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: e1c4b8dbaea8dfc4e84624ef2be77178, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306497843}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
+          Assembly-CSharp
+        m_MethodName: DisableBehaviour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1333743561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333743554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: d15ca04e25287394faacdf876d5a370a, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1306497845}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: ReloadPerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1339646542
 GameObject:
   m_ObjectHideFlags: 0
@@ -12451,6 +12218,181 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1628207991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1669965048
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1669965049}
+  - component: {fileID: 1669965054}
+  - component: {fileID: 1669965053}
+  - component: {fileID: 1669965052}
+  - component: {fileID: 1669965051}
+  - component: {fileID: 1669965050}
+  m_Layer: 0
+  m_Name: Listeners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1669965049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669965048}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 475147162}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1669965050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669965048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: ae9adfbe00ab3754ead5d368fabf445e, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 475147164}
+        m_TargetAssemblyTypeName: Assets.Scripts.Player, Assembly-CSharp
+        m_MethodName: RestoreSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1669965051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669965048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: e1c4b8dbaea8dfc4e84624ef2be77178, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 475147164}
+        m_TargetAssemblyTypeName: Assets.Scripts.Player, Assembly-CSharp
+        m_MethodName: ReduceSpeedToEyeSight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1669965052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669965048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: cbff1b503853a8847a2036e4b2797294, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 475147164}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: MovePerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1669965053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669965048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b1d4feb41b15a0f45ba3052b10af5f79, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 475147164}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: JumpCanceled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1669965054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669965048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: c7fd4d88ece565649bb2ee88e95ecddd, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 475147164}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: JumpStarted
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1679760513
 GameObject:
   m_ObjectHideFlags: 0
@@ -13262,6 +13204,212 @@ Transform:
   m_Father: {fileID: 1306497840}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1936942416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936942417}
+  - component: {fileID: 1936942423}
+  - component: {fileID: 1936942422}
+  - component: {fileID: 1936942421}
+  - component: {fileID: 1936942420}
+  - component: {fileID: 1936942419}
+  - component: {fileID: 1936942418}
+  m_Layer: 0
+  m_Name: Listeners
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1936942417
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936942416}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1341705613}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1936942418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936942416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: e1c4b8dbaea8dfc4e84624ef2be77178, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300088634}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
+          Assembly-CSharp
+        m_MethodName: DisableBehaviour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1936942419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936942416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13a8afce98e7b784489029119d86125f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: ae9adfbe00ab3754ead5d368fabf445e, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300088634}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.Behaviours.WeaponSwayBehaviour,
+          Assembly-CSharp
+        m_MethodName: ActiveBehaviour
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1936942420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936942416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 01f91fc6ea4a4ac49a86f0e9ad621473, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300088632}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
+        m_MethodName: ShootCanceled
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1936942421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936942416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: f50b88b9c6ab4e246b4e17c1534766bb, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300088632}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
+        m_MethodName: WeaponEyeSightPerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1936942422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936942416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: d15ca04e25287394faacdf876d5a370a, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300088632}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
+        m_MethodName: ReloadPerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1936942423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936942416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72dab8b084e38424885c10c3c2ebd683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: d1d7c42e768d13b49b6aa7eab3f57756, type: 2}
+  unityEventRespone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 300088632}
+        m_TargetAssemblyTypeName: Assets.Scripts.Weapons.AssaultRifleHK416, Assembly-CSharp
+        m_MethodName: ShootPerformed
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1940253809
 GameObject:
   m_ObjectHideFlags: 0
