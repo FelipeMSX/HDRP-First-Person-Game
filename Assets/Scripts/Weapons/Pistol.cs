@@ -4,7 +4,7 @@ namespace Assets.Scripts.Weapons
 {
     public class Pistol : WeaponShootable
     {
-        public bool IsShooting { get; private set; }
+        public override bool IsShooting { get; set; }
 
 
         public override void Reload()

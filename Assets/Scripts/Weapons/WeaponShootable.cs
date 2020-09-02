@@ -118,6 +118,8 @@ namespace Assets.Scripts.Weapons
         }
 
 
+        public abstract bool IsShooting { get; set; }
+
         public void SwitchWeaponSight()
         {
             if (WeaponSwitchSightBehaviour == null)

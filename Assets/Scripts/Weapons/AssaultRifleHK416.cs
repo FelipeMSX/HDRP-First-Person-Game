@@ -5,7 +5,8 @@ namespace Assets.Scripts.Weapons
     public class AssaultRifleHK416 : WeaponShootable
     {
 
-        public bool IsShooting { get; private set; }
+        //Maybe this is not a property.
+        public override bool IsShooting { get; set; }
 
 
         public override void Reload()

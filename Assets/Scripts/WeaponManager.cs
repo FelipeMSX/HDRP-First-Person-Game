@@ -13,10 +13,12 @@ namespace Assets.Scripts
         private PlayerWeaponGameEvent OnWeaponSwitched = null;
 
 
-        private WeaponTypes _previousWeapon;
+        private Weapon _currentWeapon;
+        private Weapon _nextWeapon;
 
         void Start()
-        {    
+        {
+            _currentWeapon = GetWeaponByType(CurrentWeapon);
             RefreshPlayerWeapon();
         }
 
@@ -25,53 +27,33 @@ namespace Assets.Scripts
             if (!this.isActiveAndEnabled || !CanSwitchCurrentWeapon())
                 return;
 
-            CurrentWeapon = (WeaponTypes)Convert.ToInt32(obj.control.displayName) - 1;
+            _nextWeapon = GetWeaponByType((WeaponTypes)Convert.ToInt32(obj.control.displayName) - 1);
 
             RefreshPlayerWeapon();
         }
 
         private void RefreshPlayerWeapon()
         {
-            if (_previousWeapon == CurrentWeapon)
+            if (_currentWeapon == _nextWeapon || _nextWeapon == null)
                 return;
 
-            int i = 0;
-            GameObject currentWeapon = null;
-            foreach (Transform weapon in transform)
+            //Checks the currentWeaponTypes before switch to next weapon
+            if (_currentWeapon is WeaponShootable weaponShootable)
             {
-                //Before change the current weapon certifies that should remain in hig sight mode.
-                if ((WeaponTypes)i == _previousWeapon)
+                if (weaponShootable.IsShooting)
                 {
-                    Weapon prevousWeapon = weapon.gameObject.GetComponent<Weapon>();
-                    if (prevousWeapon is WeaponShootable weaponShootable)
-                    {
-                        weaponShootable.SwitchToDesiredWeaponSight(Weapons.Behaviours.WeaponSight.Hip);
-                    }
+                    //Cannot continue the weapon is currently firing.
+                    return;
                 }
-
-                if ((WeaponTypes)i == CurrentWeapon)
-                {
-                    currentWeapon = weapon.gameObject;
-                }
-                weapon.gameObject.SetActive((WeaponTypes)i == CurrentWeapon);
-
-                i++;
+                weaponShootable.SwitchToDesiredWeaponSight(Weapons.Behaviours.WeaponSight.Hip);
             }
 
-            if(currentWeapon != null)
-            {
-                Weapon weapon = currentWeapon.GetComponent<Weapon>();
-                if(weapon != null)
-                {
-
-                    OnWeaponSwitched.Raise(weapon);
-                    weapon.SmoothTransitionBehaviour?.SmoothTransition();
-
-
-                }
-            }
-
-            _previousWeapon = CurrentWeapon;
+            _currentWeapon.gameObject.SetActive(false);
+            _nextWeapon.gameObject.SetActive(true);
+            OnWeaponSwitched.Raise(_nextWeapon);
+            _nextWeapon.SmoothTransitionBehaviour?.SmoothTransition();
+            CurrentWeapon   = _nextWeapon.WeaponType;
+            _currentWeapon  = _nextWeapon;
         }
 
 
@@ -86,6 +68,21 @@ namespace Assets.Scripts
             }
 
             return false;
+        }
+
+
+        private Weapon GetWeaponByType(WeaponTypes weaponTypes)
+        {
+            for (int i = 0; i < transform.childCount; i++)
+            {
+                Transform weaponTransform = transform.GetChild(i);
+                Weapon weapon = weaponTransform.gameObject.GetComponent<Weapon>();
+
+                if (weapon.WeaponType == weaponTypes)
+                    return weapon;
+            }
+
+            return null;
         }
 
     }
