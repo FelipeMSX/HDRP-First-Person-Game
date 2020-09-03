@@ -21,7 +21,7 @@ namespace Assets.Scripts.Weapons.Behaviours
             {
                 item.ReamingLifeTime -= DecayVelocity * Time.deltaTime;
 
-                if(item.ReamingLifeTime <= 0f)
+                if (item.ReamingLifeTime <= 0f)
                 {
                     _projectilesTrashCan.Add(item);
                 }
@@ -29,9 +29,9 @@ namespace Assets.Scripts.Weapons.Behaviours
 
             foreach (var item in _projectilesTrashCan)
             {
-                if(item.ProjectileStandard != null)
+                if (item.ProjectileStandard != null)
                 {
-                    Destroy(item.ProjectileStandard.gameObject);
+                    item.ProjectileStandard.DisableRecycleRoutine();
                 }
                 _projectiles.Remove(item);
             }

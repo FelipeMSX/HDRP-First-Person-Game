@@ -13,6 +13,7 @@ public class FrameRateController : MonoBehaviour
     }
     void Start()
     {
+        QualitySettings.vSyncCount = 2;
         Application.targetFrameRate = 60;
     }
 

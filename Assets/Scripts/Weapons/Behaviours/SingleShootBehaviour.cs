@@ -32,7 +32,7 @@ namespace Assets.Scripts.Weapons.Behaviours
 
         public void Shoot()
         {
-            if (!WeaponHelper.CanShoot(_weapon.CurrentClipSize, _nextTimetoFire))
+            if (!CanShoot())
                 return;
 
             _weapon.CurrentClipSize--;
@@ -45,20 +45,18 @@ namespace Assets.Scripts.Weapons.Behaviours
 
             targetDirection = result ? hit.point - _weapon.ShootPosition.position : _cameraTransform.forward;
 
-            GameObject clone = Instantiate(_weapon.ProjectilePrefab, _weapon.ShootPosition.position, Quaternion.LookRotation(targetDirection));
-            ProjectileStandard bullet = clone.GetComponent<ProjectileStandard>();
-            bullet.Direction = targetDirection;
-            bullet.Weapon = _weapon;
+            ProjectileStandard projectileClone = _weapon.RecycleProjectileWrapper.CreateOrRecoverObject(_weapon.ProjectilePrefab.gameObject);
+
+            projectileClone.EnableRecyleRoutine(targetDirection, _weapon);
 
             _weapon.ShootAudio.PlayOneShot(_weapon.ShootAudio.clip);
             _weapon.MuzzleFlashEffect.Play();
 
-            if(_weapon.ProjectileEjectionEffect != null)
+            if (_weapon.ProjectileEjectionEffect != null)
                 _weapon.ProjectileEjectionEffect.Play();
 
 
             OnWeaponFired?.Raise(_weapon);
-
 
 
         }
@@ -67,5 +65,6 @@ namespace Assets.Scripts.Weapons.Behaviours
         {
             return WeaponHelper.CanShoot(_weapon.CurrentClipSize, _nextTimetoFire);
         }
+
     }
 }

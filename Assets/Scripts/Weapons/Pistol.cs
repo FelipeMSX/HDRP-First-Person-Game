@@ -6,6 +6,7 @@ namespace Assets.Scripts.Weapons
     {
         public override bool IsShooting { get; set; }
 
+        public override RecycleProjectileWrapper RecycleProjectileWrapper { get; set; }
 
         public override void Reload()
         {
@@ -36,8 +37,8 @@ namespace Assets.Scripts.Weapons
             BehaviourShoot = GetComponent<IBehaviourShootable>();
             WeaponSwitchSightBehaviour = GetComponent<IWeaponSwitchSightBehaviour>();
             RecoilBehaviour = GetComponent<IRecoilBehaviour>();
-
             SmoothTransitionBehaviour = GetComponent<ISmoothWeaponTransitionBehaviour>();
+            RecycleProjectileWrapper = GetComponent<RecycleProjectileWrapper>();
         }
 
         private void Update()

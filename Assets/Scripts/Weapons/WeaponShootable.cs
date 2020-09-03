@@ -1,8 +1,6 @@
 ﻿using Assets.Scripts.ScriptableObjects.Events;
 using Assets.Scripts.Weapons.Behaviours;
-using System.Net;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Assets.Scripts.Weapons
 {
@@ -118,6 +116,7 @@ namespace Assets.Scripts.Weapons
         }
 
 
+
         public abstract bool IsShooting { get; set; }
 
         public void SwitchWeaponSight()
@@ -153,5 +152,8 @@ namespace Assets.Scripts.Weapons
         }
 
         public abstract void Reload();
+
+        public abstract RecycleProjectileWrapper RecycleProjectileWrapper { get;set; }
+
     }
 }
