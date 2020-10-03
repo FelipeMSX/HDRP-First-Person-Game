@@ -14,12 +14,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Clock
-    second: {fileID: 2100000, guid: d33a2affa9f537b468915506e373ac80, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Clock_Numbers
-    second: {fileID: 2100000, guid: f2828bef039b7cd4daa3ec5acb9de970, type: 2}
+    second: {fileID: 2100000, guid: 2ae3a5f8b685e7c4b8d6f62ffb919e09, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
